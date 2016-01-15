@@ -1,0 +1,53 @@
+﻿<Window x:Class="ATISViewer.ControlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Control Window" Height="302" Width="356"
+        Closing="ControlWindow_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <CheckBox x:Name="boxEnableTD" Margin="5" Checked="boxEnableTD_Checked" Unchecked="boxEnableTD_UnChecked" Content="Enable TD"/>
+            <CheckBox x:Name="boxEnableAPS" Margin="5" Checked="boxEnableAPS_Checked" Unchecked="boxEnableAPS_UnChecked" Content="Enable APS"/>
+            <CheckBox x:Name="boxAPSROI" Margin="5" Checked="boxAPSROI_Checked" Unchecked="boxAPSROI_UnChecked" Content="Enable APS ROI"/>
+            <CheckBox x:Name="boxTDROI" Margin="5" Checked="boxTDROI_Checked" Unchecked="boxTDROI_UnChecked" Content="Enable TD ROI"/>
+            <CheckBox x:Name="boxTDROIinv" Margin="5" Checked="boxTDROIinv_Checked" Unchecked="boxTDROIinv_UnChecked" Content="Invert TD ROI"/>
+            <CheckBox x:Name="TakeSnapshots" Margin="5" Checked="TakeSnapshots_Checked" Unchecked="TakeSnapshots_UnChecked" Content="TakeSnapshots" IsChecked="True" IsEnabled="False" Visibility="Hidden"/>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Column="1"  Grid.Row="0">
+            <CheckBox x:Name="boxRecord" Margin="5" Checked="boxRecord_Checked" Unchecked="boxRecord_UnChecked" Content="Log Data" />
+            <CheckBox x:Name="boxCouple" Margin="5" Checked="boxCouple_Checked" Unchecked="boxCouple_UnChecked" Content="Couple"/>
+            <CheckBox x:Name="boxAPSsequential" Margin="5" Checked="boxAPSsequential_Checked" Unchecked="boxAPSsequential_UnChecked" Content="Sequential"/>
+            <CheckBox x:Name="boxHighSpeed" Margin="5" Checked="boxEnableHighSpeed_Checked" Unchecked="boxEnableHighSpeed_UnChecked" Content="High Speed" IsEnabled="False" Visibility="Hidden"/>
+            <CheckBox x:Name="boxCustomSpeed" Margin="5" Checked="boxEnableCustomSpeed_Checked" Unchecked="boxEnableCustomSpeed_UnChecked" Content="Custom Speed" IsEnabled="False" Visibility="Hidden" />
+        </StackPanel>
+
+        
+        
+        <StackPanel Grid.Column="2"  Grid.Row="0">
+            <Button x:Name="btnClearImage" Click="btnClearImage_Click" Content="Clear Image" Margin="5"/>
+            <Button x:Name="btnProgROI" Click="btnProgROI_Click" Content="Program ROI" Margin="5"/>
+            <Button x:Name="btnShutter" Click="btnShutter_Click" Content="Shutter" Margin="5"/>
+            <Button x:Name="btnEditBiases" Click="btnEditBiases_Click" Content="Edit Biases" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0"  Grid.Row="1" Grid.ColumnSpan="3">
+            <Label Content="Persistence (ms)"/>
+            <DockPanel Margin="5">
+                <Label DockPanel.Dock="Right" x:Name="lblPersistenceValue" Content="0"/>
+                <Slider x:Name="slidePersistence" Maximum="255"  ValueChanged="Slider_ValueChanged" SmallChange="1" LargeChange="10"/>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>

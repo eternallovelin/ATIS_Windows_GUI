@@ -1,0 +1,25 @@
+﻿<Window x:Class="ATISViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="427" Width="611"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Image Name="TDCanvas" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Stretch="Uniform" Margin="5"></Image>
+        <Image Name="APSCanvas" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Stretch="Uniform" Margin="5" MouseUp="APSCanvas_MouseUp"></Image>
+        <StatusBar Name="statusBar" Grid.Row="2" Grid.ColumnSpan="3">Status will eventually go here</StatusBar>
+        <Button Name="ctrlButton" Grid.Column="3" Grid.Row="2" Click="btnControl_Click">Controls</Button>
+    </Grid>
+</Window>

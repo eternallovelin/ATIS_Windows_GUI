@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ATISViewer</name>
+    </assembly>
+    <members>
+        <member name="T:ATISViewer.ControlWindow">
+            <summary>
+            Interaction logic for controls.xaml
+            </summary>
+            <summary>
+            ControlWindow
+            </summary>
+        </member>
+        <member name="M:ATISViewer.ControlWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ATISViewer.BiasesWindow">
+            <summary>
+            Interaction logic for BiasesWindow.xaml
+            </summary>
+            <summary>
+            BiasesWindow
+            </summary>
+        </member>
+        <member name="M:ATISViewer.BiasesWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ATISViewer.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:ATISViewer.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ATISViewer.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ATISViewer.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ATISViewer.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:BTCBOTGUI.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:BTCBOTGUI.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:BTCBOTGUI.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+    </members>
+</doc>
