@@ -62,9 +62,6 @@
         </member>
         <member name="T:BTCBOTGUI.App">
             <summary>
-            Interaction logic for App.xaml
-            </summary>
-            <summary>
             App
             </summary>
         </member>

@@ -3,4 +3,5 @@
 *.mat
 #ignore any ATIS recordings made
 *.val
+*.bin
 ATISViewer\obj\

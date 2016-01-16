@@ -21,7 +21,7 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using OpalKelly.FrontPanel;
 using System.Timers;
-using Ookii.Dialogs.Wpf;//for browsing the folders
+//using Ookii.Dialogs.Wpf;//for browsing the folders
 using System.Diagnostics;//for outputting debug messages when we get errors
 
 namespace ATISViewer
